@@ -500,6 +500,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd@1.0.vendor
 
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
@@ -519,3 +520,8 @@ PRODUCT_BOOT_JARS += \
 # Inherit from proprietary targets
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
 $(call inherit-product, vendor/xiaomi/miuicamera-veux/MiuiCamera-veux.mk)
+
+# Vendor Dolby
+$(call inherit-product, vendor/dolby/dolby.mk)
+
+
